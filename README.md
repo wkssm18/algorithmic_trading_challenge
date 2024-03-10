@@ -29,8 +29,8 @@ Conditions:
 - long_SMA rolling window = 100
 
 Result:
-!['result_graph1']('Images/result_graph_1.png')
-!['result_classification_report']('Images/result_1.png')
+!['result_graph1'](./Images/result_graph_1.png)
+!['result_classification_report'](./Images/result_1.png)
 
 Overall accuracy is only 55% so not a great result. There difference between the actual returns and strategic returns graph is deviating over time as well. <br>
 The strategic returns slightly outperformed the actual returns at the end of the test period
@@ -44,8 +44,8 @@ Conditions:
 - long_SMA rolling window = 100
 
 Result:
-!['result_graph2']('Images/result_graph_2.png')
-!['result2_classification_report']('Images/result_2.png')
+!['result_graph2'](./Images/result_graph_2.png)
+!['result2_classification_report'](./Images/result_2.png)
 
 Overall accuracy slightly rose to 56%, but this may not be a statistically significant improvement. <br>
 The graph between actual returns and strategic returns had pretty good resemblence until mid 2018, then they deviated significantly, then they re-merged together at the end. <br>
@@ -60,8 +60,8 @@ Conditions:
 - long_SMA rolling window = 150
 
 Result:
-!['result_graph3']('Images/result_graph_3.png')
-!['result3_classification_report']('Images/result_3.png')
+!['result_graph3'](./Images/result_graph_3.png)
+!['result3_classification_report'](./Images/result_3.png)
 
 Same thing here, the overall accuracy slightly rose to 56%, but unsure if this is a statistically significant improvement. <br>
 The graph between actual returns and strategic returns had pretty good resemblence throughout the entire tested period. There was a slight deviation between the two returns in the last 1-2 years. <br>
@@ -80,8 +80,8 @@ Conditions:
 - long_SMA rolling window = 100
 
 Result:
-!['result_graph4']('Images/result_graph_4.png')
-!['result4_classification_report']('Images/result_4.png')
+!['result_graph4'](./Images/result_graph_4.png)
+!['result4_classification_report'](./Images/result_4.png)
 
 The Adaboost model had a lower performance in the prediction (52%) compared to the SVC model. <br>
 However, a couple things to note here is that with the Adaboost model, the recall result of '-1' improved significantly (42%) compared to any previous cases using SVC models (~ 1 - 5%) <br>
