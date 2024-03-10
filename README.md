@@ -28,12 +28,15 @@ Conditions:
 - short_SMA rolling window = 4
 - long_SMA rolling window = 100
 
-Result:
+Results: <br>
+
 !['result_graph1'](./Images/result_graph_1.png)
 !['result_classification_report'](./Images/result_1.png)
 
 Overall accuracy is only 55% so not a great result. There difference between the actual returns and strategic returns graph is deviating over time as well. <br>
 The strategic returns slightly outperformed the actual returns at the end of the test period
+
+<br>
 
 #### Case 2.
 Conditions:
@@ -43,13 +46,16 @@ Conditions:
 - short_SMA rolling window = 4
 - long_SMA rolling window = 100
 
-Result:
+Results: <br>
+
 !['result_graph2'](./Images/result_graph_2.png)
 !['result2_classification_report'](./Images/result_2.png)
 
 Overall accuracy slightly rose to 56%, but this may not be a statistically significant improvement. <br>
 The graph between actual returns and strategic returns had pretty good resemblence until mid 2018, then they deviated significantly, then they re-merged together at the end. <br>
 The stratigic return slightly underperformed compared to the actual returns at the end of the test period
+
+<br>
 
 #### Case 3.
 Conditions:
@@ -59,7 +65,8 @@ Conditions:
 - short_SMA rolling window = 20
 - long_SMA rolling window = 150
 
-Result:
+Results: <br>
+
 !['result_graph3'](./Images/result_graph_3.png)
 !['result3_classification_report'](./Images/result_3.png)
 
@@ -67,9 +74,10 @@ Same thing here, the overall accuracy slightly rose to 56%, but unsure if this i
 The graph between actual returns and strategic returns had pretty good resemblence throughout the entire tested period. There was a slight deviation between the two returns in the last 1-2 years. <br>
 However, the strategic returns underperformed at the end of the test period compared to the actual returns.
 
-
+#### Result summary for case 1 - 3:
 #### Based on the above 3 cases with different parameters, the best returns were observed in the baseline case (case 1).
 
+<br>
 
 #### Case 4 (using a different machine learning model)
 Conditions:
@@ -79,7 +87,8 @@ Conditions:
 - short_SMA rolling window = 4
 - long_SMA rolling window = 100
 
-Result:
+Results: <br>
+
 !['result_graph4'](./Images/result_graph_4.png)
 !['result4_classification_report'](./Images/result_4.png)
 
@@ -88,12 +97,14 @@ However, a couple things to note here is that with the Adaboost model, the recal
 In terms of the graph, we can observe that the actual returns and strategic returns starts to deviate from mid 2017 and since then the two graphs do not look the same anymore. <br>
 However, we can see that the strategic returns significantly outperformed the actual returns at the end of the test period.
 
+#### Result summary for all cases:
 ### Based on all above 4 cases, the case 4 (with Adaboost) had the best algirithmic returns.
 
+<br>
 
 ### Summary
 Throughout the tests, we were able to observe that changing parameters can have impact on the results. However, the effects were not very significant. This is probably due to just minor changes in the parameters. <br>
-However, when we changed the machine learning model to a different model, the results were significaly different. <br>
+However, when we changed the machine learning model to a different model, the results were significaly different. <br><br>
 
 
 
